@@ -19,6 +19,18 @@
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="index.html">Ethan's Website</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#FarToCel">FarToCel</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#CelToFar">CelToFar</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#MetToFt">MetToFt</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#FtToMet">FtToMet</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <header class="masthead bg-primary text-white text-center">
@@ -34,7 +46,7 @@
             </div>
         </header>
         <!-- Section-->
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="FarToCel">
             <div class="container">
                 <!-- Far Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Farenheit to Celsius</h2>
@@ -42,21 +54,21 @@
             <p>Insert Farenheit value</p>
             <p><input id="f"> degrees Farenheit</p>
             <p>Value in Celsius:</p>
-            <p><input id="resultcel"></p>
+            <p><input id="resultcel"> degrees Celsius</p>
             <button onclick="convertTemp('F')">Convert</button>
         </section>
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="CelToFar">
             <div class="container">
                 <!-- Cel Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Celsius to Farenheit</h2>
             </div>
             <p>Insert Celsius value</p>
-            <p><input id="c"> degrees Farenheit</p>
+            <p><input id="c"> degrees Celsius</p>
             <p>Value in Farenheit:</p>
-            <p><input id="resultfar"></p>
+            <p><input id="resultfar"> degrees Farenheit</p>
             <button onclick="convertTemp('C')">Convert</button>
         </section>
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="MetToFt">
             <div class="container">
                 <!-- Met Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Meter to Feet</h2>
@@ -64,10 +76,10 @@
             <p>Insert Meter value</p>
             <p><input id="x"> Meter/s</p>
             <p>Value in Feet:</p>
-            <p><input id="resultft"></p>
+            <p><input id="resultft"> Foot/Feet</p>
             <button onclick="convertLength('X')">Convert</button>
         </section>
-        <section class="page-section portfolio" id="portfolio">
+        <section class="page-section portfolio" id="FtToMet">
             <div class="container">
                 <!-- Ft Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Feet to Meter</h2>
@@ -75,7 +87,7 @@
             <p>Insert Feet value</p>
             <p><input id="y"> Foot/Feet</p>
             <p>Value in Meters:</p>
-            <p><input id="resultmet"></p>
+            <p><input id="resultmet"> Meter/s</p>
             <button onclick="convertLength('Y')">Convert</button>
         </section>
         
