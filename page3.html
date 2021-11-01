@@ -71,31 +71,59 @@
             function factorial() {
                 var input = document.getElementById("fac").value;
                 var x = 1, y = 1;
-
-                while (y <= input){
-                    x = x * y;
-                    y++;
+                
+                if (input > 0){
+                    while (y <= input){
+                        x = x * y;
+                        y++;
+                    }
+                    document.getElementById("facresult").value = x;
                 }
-                document.getElementById("facresult").value = x;
+                else{
+                    input = input * (-1);
+                    while (y <= input){
+                        x = x * y;
+                        y++;
+                    }
+                    x = x * (-1);
+                    document.getElementById("facresult").value = x;
+                }
             }
             function sum() {
                 var input = document.getElementById("sum").value;
                 var x = 0, y = 1;
 
-                do {
-                    x = x + y;
-                    y++;
-                }while (y <= input);
-                document.getElementById("sumresult").value = x;
+                if (input > 0){
+                    do {
+                        x = x + y;
+                        y++;
+                    }while (y <= input);
+                    document.getElementById("sumresult").value = x;
+                }
+                else{
+                    y = -1;
+                    do {
+                        x = x + y;
+                        y--;
+                    }while (y >= input);
+                    document.getElementById("sumresult").value = x;
+                }   
             }
             function average() {
                 var x = 0, y, input = document.getElementById("avg").value;
 
-                for (i = 1; i <= input; i++){
-                    x = x + i;
+                if (input > 0){
+                    for (i = 1; i <= input; i++){
+                        x = x + i;
+                    }
                 }
-                
-                y = x / input
+                else{
+                    for (i = (-1); i >= input; i--){
+                        x = x + i;
+                    }
+                    x = x * (-1);
+                }
+                y = x / input;
                 document.getElementById("avgresult").value = y;
             }
         </script>
