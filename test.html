@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
@@ -37,7 +37,7 @@
         <section class="page-section portfolio" id="FarToCel">
             <div class="container">
                 <!-- Far Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"></h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Fahrenheit to Celsius</h2>
             </div>
             <p>Insert Taxable Income</p>
             <p><input id="x"></p>
@@ -52,12 +52,12 @@
                 income = parseFloat(input.replace(/,/g, ''));
                 
                 if (income > 0 && income <= 250000){a = 0; b =  0; c = 0;}
-                else if (income > 0 && income <= 400000){a= 250000; b = 0.20; c = 0;}
-                else if (income > 0 && income <= 800000){a= 400000; b = 0.25; c = 30000;}
-                else if (income > 0 && income <= 2000000){a= 800000; b = 0.30; c = 130000;}
-                else if (income > 0 && income <= 8000000){a= 2000000; b = 0.32; c = 490000;}
-                else if (income > 0 && income > 8000000){a= 8000000; b = 0.35; c = 2410000;}
-                else {document.getElementById("y").value = "NEGATIVE INPUT";}
+                else if (income <= 400000){a= 250000; b = 0.20; c = 0;}
+                else if (income <= 800000){a= 400000; b = 0.25; c = 30000;}
+                else if (income <= 2000000){a= 800000; b = 0.30; c = 130000;}
+                else if (income <= 8000000){a= 2000000; b = 0.32; c = 490000;}
+                else if (income > 8000000){a= 8000000; b = 0.35; c = 2410000;}
+                else {document.getElementById("y") = "error";}
 
                 x = (income - a) * b + c;
                 document.getElementById("y").value = Number.parseFloat(x).toLocaleString('en-US', {minimumFractionDigits:2});
