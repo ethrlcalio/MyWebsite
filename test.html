@@ -39,19 +39,11 @@
                 <!-- Far Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"></h2>
             </div>
-            <p>Employee Name:</p>
-            <p><input id="name"></p>
-            <p>Days Worked:</p>
-            <p><input id="days"></p>
-            <p>Daily Rate:</p>
-            <p><input id="rate"></p>
-            <p>Deduction Amount:</p>
-            <p><input id="deduc"></p>
-            <button onclick="addRow()">Run</button>
-            <br>
-            <p>Delete Row:</p>
-            <p><input id="del"></p>
-            <button onclick="deleteRow()">Delete</button>
+            <div>
+                <p class="centerItem">Employee Name: &nbsp <input id="name"> &nbsp Days Worked: &nbsp <input id="days"> &nbsp Daily Rate: &nbsp <input id="rate">&nbsp Deduction Amount: &nbsp <input id="deduc"> &nbsp &nbsp <button onclick="addRow()">Run</button></p>
+                <br>
+                <p  class="centerItem">Delete Row: &nbsp <input id="del"> &nbsp &nbsp <button onclick="deleteRow()">Delete</button></p>
+            </div>
         </section>
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
@@ -65,7 +57,7 @@
                 </div>
             </div>
         </header>
-        <table id="myTable">
+        <table id="myTable" style="width:50%" class="center">
             <thead>
                 <tr>
                     <th>No.</th>

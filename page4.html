@@ -13,12 +13,6 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="css/styles.css?v=2" />
-        <style>
-            table, th, td {
-            border: 1px solid black;
-            text-align: center
-            }
-        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -45,33 +39,13 @@
                 <!-- Far Section Heading-->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0"></h2>
             </div>
-            <p>Employee Name:</p>
-            <p><input id="name"></p>
-            <p>Days Worked:</p>
-            <p><input id="days"></p>
-            <p>Daily Rate:</p>
-            <p><input id="rate"></p>
-            <p>Deduction Amount:</p>
-            <p><input id="deduc"></p>
-            <button onclick="addRow()">Run</button>
-            <br>
-            <p>Delete Row:</p>
-            <p><input id="del"></p>
-            <button onclick="deleteRow()">Delete</button>
-        </section>
-        <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">Table</h1>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
+            <div>
+                <p class="centerItem">Employee Name: &nbsp <input id="name"> &nbsp Days Worked: &nbsp <input id="days"> &nbsp Daily Rate: &nbsp <input id="rate">&nbsp Deduction Amount: &nbsp <input id="deduc"> &nbsp &nbsp <button onclick="addRow()">Run</button></p>
+                <br>
+                <p  class="centerItem">Delete Row: &nbsp <input id="del"> &nbsp &nbsp <button onclick="deleteRow()">Delete</button></p>
             </div>
-        </header>
-        <table id="myTable" style="width:50%">
+        </section>
+        <table id="myTable" style="width:50%" class="center">
             <thead>
                 <tr>
                     <th>No.</th>
